@@ -1,0 +1,18 @@
+Flexbox Layout:
+https://tproger.ru/translations/how-css-flexbox-works/
+http://css-live.ru/articles/vizualnoe-rukovodstvo-po-svojstvam-flexbox-iz-css3.html
+http://www.internet-technologies.ru/articles/polnoe-rukovodstvo-po-flexbox.html
+
+https://codepen.io/enxaneta/full/adLPwv
+http://flexboxfroggy.com/
+
+
+
+Grid Layout:
+http://css-live.ru/css/bolshaya-statya-pro-gridy-css-grid-layout.html
+https://developer.mozilla.org/ru/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout
+http://learncssgrid.com/#implicitly-named-grid-areas (eng)
+
+https://alialaa.github.io/css-grid-cheat-sheet/
+http://cssgridgarden.com/
+
