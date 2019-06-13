@@ -17,22 +17,40 @@
                 display: block;
                 float: left;
                 text-align: center;
-                width: 150;
-                height: 150;
+                width: 200px;
+                height: 200px;
+            }
+            img{
+                width: 150px;
+                height: 120px;
             }
         </style>
     </head>
     <body>
         <dl>
-            <h2><dt>Теги figure и figcaption.</dt></h2>
+            <dt>Теги figure и figcaption:</dt>
+            <dd>Тег figure используется для группирования любых элементов, например, изображений и подписей к ним, а тег figcaption содержит описание тега figure.</dd>
+        </dl>
+        <dl>
+            <dt>Синтаксис:</dt>
             <dd>
-                <p>Тег figure используется для группирования любых элементов, например, изображений и подписей к ним, а тег figcaption содержит описание тега figure.</p>
+                <code>
+                    &lt;figure&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;...<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;figcaption&gt;...&lt;/figcaption&gt;<br>
+                    &lt;/figure&gt;
+                </code>
+            </dd>
+        </dl>
+        <dl>
+            <dt>Пример:</dt>
+            <dd>
                 <figure>
-                    <p><img src="C:\Users\Jorik\Desktop\BELITSOFT\Task2\Car.JPG" width="180" height="150"></p>
+                    <p><img src="Car.JPG" alt=""></p>
                     <figcaption>Top Car</figcaption>
                 </figure>
                 <figure>
-                    <p><img src="C:\Users\Jorik\Desktop\BELITSOFT\Task2\Train.JPG" width="180" height="150"></p>
+                    <p><img src="Train.JPG" alt=""></p>
                     <figcaption>Fast Train</figcaption>
                 </figure>
             </dd>
