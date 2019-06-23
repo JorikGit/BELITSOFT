@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>blank-menu</title>
+    <style>
+        body {
+            background: grey;
+            color: white;
+            font-family: Arial, sans-serif;
+            font-size: 20px;
+        }
+
+        .nav {
+            width: 80%;
+            background: black;
+            margin: auto;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        nav ul::after {
+            content: " ";
+            display: block;
+        }
+
+        .first-lvl>li {
+            padding: 20px;
+            position: relative;
+            float: left;
+        }
+
+        .first-lvl>li:hover {
+            background: royalblue;
+        }
+
+        .first-lvl li:hover ul{
+            display: block;
+            position: absolute;
+        }
+
+        .second-lvl {
+            background: white;
+            position: absolute;
+            visibility: hidden;
+        }
+
+        .second-lvl li a {
+            color: grey;
+        }
+
+        .nav li:hover > .second-lvl {
+            visibility: visible;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul class="first-lvl">
+            <li>
+                <a href="">Главная</a>
+                <ul class="second-lvl">
+                    <li><a href="">Подменю 1</a></li>
+                    <li><a href="">Подменю 2</a></li>
+                    <li><a href="">Подменю 3</a></li>
+                </ul>
+            </li>
+            <li><a href="">О нас</a></li>
+            <li>
+                <a href="">Портфолио</a>
+                <ul class="second-lvl">
+                    <li><a href="">Подменю 1</a></li>
+                    <li>
+                        <a href="">Уровень 3 меню</a>
+                        <ul>
+                            <li><a href="">Подменю 4</a></li>
+                            <li><a href="">Подменю 5</a></li>
+                            <li><a href="">Подменю 6</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="">Блог</a></li>
+            <li><a href="">Контакты</a></li>
+        </ul>
+    </div>
+</body>
+</html>
