@@ -9,66 +9,123 @@
     <style>
         body {
             background: grey;
-            color: white;
             font-family: Arial, sans-serif;
-            font-size: 20px;
         }
 
-        .nav {
-            width: 80%;
-            background: black;
-            margin: auto;
-        }
-
-        a {
-            text-decoration: none;
+        h1 {
+            text-align: center;
             color: white;
         }
 
-        ul {
-            list-style-type: none;
+        .navbar {
+            height: auto;
+            background: black;
+            margin: 50px 20px;
         }
 
-        nav ul::after {
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar ul::after {
             content: " ";
             display: block;
+            clear: both;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            display: block;
+            color: white;
         }
 
         .first-lvl>li {
-            padding: 20px;
             position: relative;
             float: left;
+            padding: 0 0 0 25px;
+        }
+
+        .first-lvl>li::before {
+            background-image: url("icons.png");
+            width: 32px;
+            height: 32px;
+            content: " ";
+            position: absolute;
+            left: 10px;
+            top: 13px;
+        }
+
+        .first-lvl>li:nth-child(1)::before {
+            background-position: top left -69px;
+        }
+
+        .first-lvl>li:nth-child(2)::before {
+            background-position: top left -105px;
+        }
+
+        .first-lvl>li:nth-child(3)::before {
+            background-position: top left -35px;
+        }
+
+        .first-lvl>li:nth-child(4)::before {
+            background-position: top left -140px;
+        }
+
+        .first-lvl>li:nth-child(5)::before {
+            background-position: top left;
+        }
+
+        .first-lvl>li>a {
+            padding: 20px 20px;
+            font-size: 20px;
+            color: white;
         }
 
         .first-lvl>li:hover {
-            background: royalblue;
-        }
-
-        .first-lvl li:hover ul{
-            display: block;
-            position: absolute;
+            background: dodgerblue;
         }
 
         .second-lvl {
-            background: white;
+            min-width: 200px;
             position: absolute;
+            left: 0;
+            background: white;
             visibility: hidden;
         }
 
-        .second-lvl li a {
+        .second-lvl>li {
+            position: relative;
+        }
+
+        .second-lvl>li>a {
+            padding: 10px 20px;
+            font-size: 20px;
             color: grey;
         }
 
-        .nav li:hover > .second-lvl {
-            visibility: visible;
+        .second-lvl>li:hover {
+            background: lightgrey;
+            border-left: 5px solid dodgerblue;
         }
 
+        .second-lvl .second-lvl {
+            position: absolute;
+            left: 100%;
+            top: 0;
+        }
+
+        .navbar li:hover>.second-lvl {
+            visibility: visible;
+        }
 
 
     </style>
 </head>
 <body>
-    <div class="nav">
+    <h1>Много-уровневое горизонтальное меню</h1>
+    <div class="navbar">
         <ul class="first-lvl">
             <li>
                 <a href="">Главная</a>
@@ -85,7 +142,7 @@
                     <li><a href="">Подменю 1</a></li>
                     <li>
                         <a href="">Уровень 3 меню</a>
-                        <ul>
+                        <ul class="second-lvl">
                             <li><a href="">Подменю 4</a></li>
                             <li><a href="">Подменю 5</a></li>
                             <li><a href="">Подменю 6</a></li>
