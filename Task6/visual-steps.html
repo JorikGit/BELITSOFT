@@ -7,16 +7,46 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>visual-steps</title>
     <style>
+        ul {
+            list-style-type: none;
+        }
 
+        li {
+            display: inline-block;
+            border-radius: 100%;
+            border: 3px solid grey;
+            background: red;
+            text-align: center;
+            font-size: 40px;
+            padding: 15px 30px;
+            margin-left: 30px;
+        }
+
+        li::after {
+            content: " ";
+            display: block;
+            width: 45px;
+            height: 5px;
+            position: absolute;
+            border-bottom: 5px solid grey;
+        }
+
+        li:last-child::after {
+
+        }
+
+        li:active {
+            background: purple;
+        }
     </style>
 </head>
 <body>
     <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
     </ul>
 </body>
 </html>
