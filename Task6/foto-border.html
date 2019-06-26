@@ -7,9 +7,36 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>foto-border</title>
     <style>
-        .border>img{
+        .border {
+            width: 380px;
+            height: 180px;
+            margin: 300px auto;
+            position: relative;
+            border-right: 15px solid green;
+            border-bottom: 15px solid green;
+        }
+
+        .border::before {
+            width: 380px;
+            height: 180px;
+            content: " ";
+            position: absolute;
+            top: -10px;
+            left: -10px;
             border: 10px solid greenyellow;
         }
+
+        .border::after {
+            width: 385px;
+            height: 185px;
+            content: " ";
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            border-right: 5px solid darkgreen;
+            border-bottom: 5px solid darkgreen;
+        }
+
     </style>
 </head>
 <body>
