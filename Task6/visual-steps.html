@@ -15,34 +15,46 @@
             display: inline-block;
             border-radius: 100%;
             border: 3px solid grey;
-            background: red;
+            background: grey;
             text-align: center;
             font-size: 40px;
             padding: 15px 30px;
-            margin-left: 30px;
+            margin-left: 70px;
         }
 
         li::after {
             content: " ";
             display: block;
-            width: 45px;
+            width: 80px;
             height: 5px;
-            position: absolute;
             border-bottom: 5px solid grey;
+            position: absolute;
+            margin-left: 50px;
+            margin-top: -30px;
         }
 
         li:last-child::after {
+            border-bottom: 0;
+        }
 
+        a {
+            text-decoration: none;
         }
 
         li:active {
             background: purple;
+            color: white;
+        }
+
+        li:visited {
+            background: greenyellow;
+            color: white;
         }
     </style>
 </head>
 <body>
     <ul>
-        <li>1</li>
+        <li><a href="">1</a></li>
         <li>2</li>
         <li>3</li>
         <li>4</li>
