@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>one-block</title>
+    <style>
+        body {
+            background: aqua;
+            margin: 0;
+        }
+
+        div {
+            margin: auto;
+        }
+
+        .one-block {
+            width: 400px;
+            height: 400px;
+            margin: 50px auto;
+        }
+
+        @media screen and (min-width: 1280px) {
+            .one-block {
+                max-width: 400px;
+                max-height: 400px;
+                background: yellow;
+            }
+        }
+
+        @media screen and (max-width: 1280px)
+                      and (min-width: 1024px) {
+            .one-block {
+                max-width: 380px;
+                max-height: 380px;
+                background: red;
+            }
+        }
+
+        @media screen and (max-width: 1024px)
+                      and (min-width: 768px) {
+            .one-block {
+                max-width: 350px;
+                max-height: 350px;
+                background: red;
+                border-radius: 40px;
+            }
+        }
+
+
+        @media screen and (max-width: 768px)
+                      and (min-width: 640px) {
+            .one-block {
+                max-width: 350px;
+                max-height: 350px;
+                background: yellow;
+                border-radius: 40px;
+            }
+        }
+
+        @media screen and (max-width: 640px)
+                      and (min-width: 480px) {
+            .one-block {
+                max-width: 330px;
+                max-height: 330px;
+                background: yellow;
+                border-radius: 40px;
+                border: 2px solid red;
+            }
+        }
+
+        @media screen and (max-width: 480px)
+                      and (min-width: 320px) {
+            .one-block {
+                max-width: 315px;
+                max-height: 315px;
+                background: yellow;
+                border-radius: 100%;
+                border: 2px solid red;
+            }
+        }
+
+        @media screen and (max-width: 320px) {
+            .one-block {
+                width: 100%;
+                height: 600px;
+                background: yellow;
+                padding: 0;
+                margin: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="one-block"></div>
+</body>
+</html>
