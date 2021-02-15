@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>form</title>
+    <style>
+        body {
+            background: darkgrey;
+        }
+
+        .bdy {
+            width: 610px;
+            background: white;
+            margin: auto;
+            padding: 40px;
+        }
+
+        input {
+            width: 300px;
+            height: 30px;
+        }
+
+        textarea {
+            width: 600px;
+            height: 100px;
+        }
+
+        input:last-child {
+            width: 100px;
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="bdy">
+        <h3>Обратная связь</h3>
+
+        <p>Имя:</p>
+        <input type="text" id="name" placeholder="Введите Ваще имя" required>
+
+        <p>Ваш email:</p>
+        <input type="email" id="email" placeholder="Введите адрес Вашей почты" required>
+
+        <p>Ваш телефон:</p>
+        <input type="tel" id="tel" placeholder="Введите номер телефона" required>
+
+        <p>Сообщение:</p>
+        <textarea placeholder="Тескт сообщения..."></textarea>
+
+        <p>
+            <input type="submit" value="Отправить">
+        </p>
+    </div>
+</body>
+</html>
