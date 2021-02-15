@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>bg-size</title>
+    <style>
+        table{
+            border: 2px solid red;
+            border-collapse: collapse;
+            width: auto;
+            height: auto;
+            margin: auto;
+        }
+        td{
+            border: 2px solid red;
+            width: auto;
+            height: auto;
+        }
+        div{
+            width: 500px;
+            height: 500px;
+            color: yellow;
+            text-align: start;
+        }
+        .bg1{
+            background-image: url("anime.jpg");
+            background-size: 50% auto;
+            background-repeat: no-repeat;
+        }
+        .bg2{
+            background-image: url("anime.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .bg3{
+            background-image: url("anime.jpg");
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        .bg4{
+            background-image: url("anime.jpg");
+            background-size: 80% 80%;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td><div class="bg1">50% auto.</div></td>
+            <td><div class="bg2">cover.</div></td>
+        </tr>
+        <tr>
+            <td><div class="bg3">contain.</div></td>
+            <td><div class="bg4">80% 80%.</div></td>
+        </tr>
+    </table>
+</body>
+</html>
