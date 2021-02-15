@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>table-test-2</title>
+    <style>
+        .table1{
+            border: 2px solid blue;
+            width: 100%;
+            height: 100%;
+            padding: 5px;
+            border-collapse: collapse;
+        }
+        .tr1, .td1{
+            border: 2px solid blue;
+            padding: 5px;
+        }
+        th{
+            background-color: #888888;
+            color: #ffffff;
+        }
+        .list{
+            text-align: center;
+        }
+        .jpmc, .vct{
+            text-align: center;
+        }
+        .sub-total{
+            text-align: right;
+        }
+        .table2{
+            border-collapse: collapse;
+            margin: auto;
+            width: auto;
+            height: auto;
+        }
+        .red{
+            background: red;
+            width: 38px;
+            height: 38px;
+        }
+        .green{
+            background: greenyellow;
+            width: 38px;
+            height: 38px;
+        }
+        .green2{
+            background: green;
+            width: 38px;
+            height: 38px;
+        }
+        .green3{
+            background: mediumseagreen;
+            width: 38px;
+            height: 38px;
+        }
+        .green4{
+            background: springgreen;
+            width: 38px;
+            height: 38px;
+        }
+        .pink{
+            background: deeppink;
+            width: 38px;
+            height: 38px;
+        }
+        .pink3{
+            background: hotpink;
+            width: 38px;
+            height: 38px;
+        }
+        .pink2{
+            background: fuchsia;
+            width: 38px;
+            height: 38px;
+        }
+        .pink4{
+            background: pink;
+            width: 38px;
+            height: 38px;
+        }
+        .white{
+            background: white;
+            width: 38px;
+            height: 38px;
+        }
+        .black{
+            background: black;
+            width: 38px;
+            height: 38px;
+        }
+        .brown{
+            background: saddlebrown;
+            width: 38px;
+            height: 38px;
+        }
+        .brown2{
+            background: sandybrown;
+            width: 38px;
+            height: 38px;
+        }
+    </style>
+</head>
+<body>
+<table class="table1">
+    <tr class="tr1">
+        <th>Название1</th>
+        <th>Название2</th>
+        <th>Еще название</th>
+        <th>Куча элементов</th>
+        <th>Список1</th>
+        <th>Список2</th>
+    </tr>
+    <tr class="tr1">
+        <td rowspan="11" class="jpmc td1">JPMC</td>
+        <td rowspan="5" class="tr1">CST</td>
+        <td rowspan="3" class="tr1">CT</td>
+        <td class="tr1">ADS</td>
+        <td class="list td1">1</td>
+        <td class="list td1">10</td>
+    </tr>
+    <tr class="tr1">
+        <td class="tr1">BTO</td>
+        <td class="list td1">2</td>
+        <td class="list td1">15</td>
+    </tr>
+    <tr class="tr1">
+        <td class="tr1">CSI</td>
+        <td class="list td1">3</td>
+        <td class="list td1">16</td>
+    </tr>
+    <tr class="tr1">
+        <td rowspan="2" class="vct td1">VCT</td>
+        <td class="tr1">ADS</td>
+        <td class="list td1">4</td>
+        <td class="list td1">10</td>
+    </tr>
+    <tr class="tr1 td1">
+        <td class="tr1">BTO</td>
+        <td class="list td1">5</td>
+        <td class="list td1">15</td>
+    </tr>
+    <tr class="tr1">
+        <td colspan="3" class="sub-total td1">Sub Total</td>
+        <td class="list td1">6</td>
+        <td class="list td1">15</td>
+    </tr>
+    <tr class="tr1">
+        <td rowspan="4" class="tr1">CST</td>
+        <td rowspan="3" class="tr1">CT</td>
+        <td class="tr1">ADS</td>
+        <td class="list td1">7</td>
+        <td class="list td1">10</td>
+    </tr>
+    <tr class="tr1">
+        <td class="tr1">BTO</td>
+        <td class="list td1">8</td>
+        <td class="list td1">15</td>
+    </tr>
+    <tr class="tr1">
+        <td class="tr1">CSI</td>
+        <td class="list td1">9</td>
+        <td class="list td1">16</td>
+    </tr>
+    <tr class="tr1">
+        <td class="vct td1">VCT</td>
+        <td class="tr1">ADS</td>
+        <td class="list td1">10</td>
+        <td class="list td1">10</td>
+    </tr>
+    <tr class="tr1">
+        <td colspan="3" class="sub-total td1">Sub Total</td>
+        <td class="list td1">11</td>
+        <td class="list td1">15</td>
+    </tr>
+</table>
+<br>
+<table class="table2">
+    <tr>
+        <td class="red"></td>
+        <td></td>
+        <td class="red"></td>
+        <td class="green"></td>
+        <td class="red"></td>
+        <td></td>
+        <td class="red"></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td class="red"></td>
+        <td class="green"></td>
+        <td></td>
+        <td class="green"></td>
+        <td class="red"></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td class="red"></td>
+        <td class="green"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="green"></td>
+        <td class="red"></td>
+    </tr>
+    <tr>
+        <td class="green"></td>
+        <td></td>
+        <td></td>
+        <td class="red"></td>
+        <td></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+    <tr>
+        <td class="red"></td>
+        <td class="green"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="green"></td>
+        <td class="red"></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td class="red"></td>
+        <td class="green"></td>
+        <td></td>
+        <td class="green"></td>
+        <td class="red"></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td class="red"></td>
+        <td></td>
+        <td class="red"></td>
+        <td class="green"></td>
+        <td class="red"></td>
+        <td></td>
+        <td class="red"></td>
+    </tr>
+</table>
+<br>
+<table class="table2">
+    <tr>
+        <td></td><td></td><td></td><td class="pink"></td><td></td><td></td><td></td><td></td>
+        <td></td><td></td><td></td><td class="green2"></td><td></td><td></td><td></td><td></td>
+        <td></td><td></td><td></td><td class="pink"></td><td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+        <td></td><td></td><td class="pink"></td><td class="pink2"></td><td class="pink"></td><td></td><td></td><td></td>
+        <td></td><td></td><td class="green2"></td><td class="green3"></td><td class="green2"></td><td></td><td></td><td></td>
+        <td></td><td></td><td class="pink"></td><td class="pink2"></td><td class="pink"></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+        <td></td><td class="pink"></td><td class="pink2"></td><td class="pink3"></td><td class="pink2"></td><td class="pink"></td><td></td><td></td>
+        <td></td><td class="green2"></td><td class="green3"></td><td class="green4"></td><td class="green3"></td><td class="green2"></td><td></td><td></td>
+        <td></td><td class="pink"></td><td class="pink2"></td><td class="pink3"></td><td class="pink2"></td><td class="pink"></td><td></td><td></td>
+    </tr>
+    <tr>
+        <td class="pink"></td><td class="pink2"></td><td class="pink3"></td><td class="pink4"></td><td class="pink3"></td><td class="pink2"></td><td class="pink"></td><td class="white"></td>
+        <td class="green2"></td><td class="green3"></td><td class="green4"></td><td class="green"></td><td class="green4"></td><td class="green3"></td><td class="green2"></td><td class="white"></td>
+        <td class="pink"></td><td class="pink2"></td><td class="pink3"></td><td class="pink4"></td><td class="pink3"></td><td class="pink2"></td><td class="pink"></td><td></td>
+    </tr>
+    <tr>
+        <td></td><td class="pink"></td><td class="pink2"></td><td class="pink3"></td><td class="pink2"></td><td class="pink"></td><td></td><td></td>
+        <td></td><td class="green2"></td><td class="green3"></td><td class="green4"></td><td class="green3"></td><td class="green2"></td><td></td><td></td>
+        <td></td><td class="pink"></td><td class="pink2"></td><td class="pink3"></td><td class="pink2"></td><td class="pink"></td><td></td><td></td>
+    </tr>
+    <tr>
+        <td></td><td></td><td class="pink"></td><td class="pink2"></td><td class="pink"></td><td></td><td></td><td></td>
+        <td></td><td></td><td class="green2"></td><td class="green3"></td><td class="green2"></td><td></td><td></td><td></td>
+        <td></td><td></td><td class="pink"></td><td class="pink2"></td><td class="pink"></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+        <td></td><td></td><td></td><td class="pink"></td><td></td><td></td><td></td><td></td>
+        <td></td><td></td><td></td><td class="green2"></td><td></td><td></td><td></td><td></td>
+        <td></td><td></td><td></td><td class="pink"></td><td></td><td></td><td></td><td></td>
+    </tr>
+</table>
+<br>
+<table class="table2">
+    <tr>
+        <td colspan="5" class="black"></td><td class="green2"></td><td colspan="5" class="black"></td>
+    </tr>
+    <tr>
+        <td colspan="4" class="black"></td><td colspan="3" class="green4"></td><td colspan="4" class="black"></td>
+    </tr>
+    <tr>
+        <td colspan="3" class="black"></td><td colspan="5" class="green3"></td><td colspan="3" class="black"></td>
+    </tr>
+    <tr>
+        <td colspan="2" class="black"></td><td colspan="7" class="green"></td><td colspan="2" class="black"></td>
+    </tr>
+    <tr>
+        <td colspan="4" class="black"></td><td colspan="3" class="green2"></td><td colspan="4" class="black"></td>
+    </tr>
+    <tr>
+        <td colspan="3" class="black"></td><td colspan="5" class="green4"></td><td colspan="3" class="black"></td>
+    </tr>
+    <tr>
+        <td colspan="2" class="black"></td><td colspan="7" class="green3"></td><td colspan="2" class="black"></td>
+    </tr>
+    <tr>
+        <td class="black"></td><td colspan="9" class="green"></td><td class="black"></td>
+    </tr>
+    <tr>
+        <td colspan="3" class="black"></td><td colspan="5" class="green2"></td><td colspan="3" class="black"></td>
+    </tr>
+    <tr>
+        <td colspan="2" class="black"></td><td colspan="7" class="green4"></td><td colspan="2" class="black"></td>
+    </tr>
+    <tr>
+        <td colspan="1" class="black"></td><td colspan="9" class="green3"></td><td colspan="1" class="black"></td>
+    </tr>
+    <tr>
+        <td colspan="11" class="green"></td>
+    </tr>
+    <tr>
+        <td class="black"></td><td class="black"></td><td class="black"></td><td class="black"></td><td class="brown"></td><td class="brown2"></td><td class="brown"></td><td class="black"></td><td class="black"></td><td class="black"></td><td class="black"></td>
+    </tr>
+    <tr>
+        <td class="black"></td><td class="black"></td><td class="black"></td><td class="black"></td><td class="brown"></td><td class="brown2"></td><td class="brown"></td><td class="black"></td><td class="black"></td><td class="black"></td><td class="black"></td>
+    </tr>
+    <tr>
+        <td class="black"></td><td class="black"></td><td class="black"></td><td class="black"></td><td class="brown"></td><td class="brown2"></td><td class="brown"></td><td class="black"></td><td class="black"></td><td class="black"></td><td class="black"></td>
+    </tr>
+    <tr>
+        <td class="black"></td><td class="black"></td><td class="black"></td><td class="black"></td><td class="brown"></td><td class="brown2"></td><td class="brown"></td><td class="black"></td><td class="black"></td><td class="black"></td><td class="black"></td>
+    </tr>
+    <tr>
+        <td class="black"></td><td class="black"></td><td class="black"></td><td class="black"></td><td class="brown"></td><td class="brown2"></td><td class="brown"></td><td class="black"></td><td class="black"></td><td class="black"></td><td class="black"></td>
+    </tr>
+</table>
+</body>
+</html>
