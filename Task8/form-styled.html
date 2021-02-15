@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap" rel="stylesheet">
+    <title>form-styled</title>
+    <style>
+        body {
+            background: darkgrey;
+            font-family: 'DM Sans', sans-serif;
+        }
+
+        .form {
+            width: 610px;
+            background: white;
+            margin: auto;
+            border: 2px solid dodgerblue;
+            border-radius: 10px;
+            text-align: center;
+            position: relative;
+        }
+
+        h2 {
+            width: 100%;
+            margin: 0;
+            padding: 20px 0;
+            background: dodgerblue;
+            text-align: center;
+            color: white;
+            font-weight: lighter;
+            position: relative;
+        }
+
+        p {
+            margin-left: 40px;
+            text-align: left;
+            color: darkslategrey;
+            font-weight: bold;
+            position: relative;
+        }
+
+        p:last-child {
+            margin-left: 0;
+            text-align: center;
+        }
+
+        input {
+            width: 90%;
+            height: 30px;
+            padding-left: 30px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        input:focus {
+            border: 2px solid dodgerblue;
+        }
+
+        textarea {
+            width: 90%;
+            height: 100px;
+            padding-left: 30px;
+            padding-top: 10px;
+            border-radius: 5px;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        .button {
+            width: 200px;
+            height: 50px;
+            padding-left: 0;
+            background: dodgerblue;
+            border: 2px solid dodgerblue;
+            color: white;
+        }
+
+        h2::before {
+            content: " ";
+            background-image: url("form-spritesheet.png");
+            width: 24px;
+            height: 24px;
+            position: absolute;
+            background-position: top left -48px;
+            left: 190px;
+            top: 24px;
+        }
+
+        div::before {
+            content: " ";
+            background-image: url("form-spritesheet.png");
+            width: 24px;
+            height: 24px;
+            position: absolute;
+        }
+
+        div:nth-child(2)::before {
+            background-position: top left -95px;
+            position: absolute;
+            top: 130px;
+            left: 17px;
+        }
+
+        div:nth-child(3)::before {
+            background-position: top left -24px;
+            position: absolute;
+            top: 218px;
+            left: 17px;
+        }
+
+        div:nth-child(4)::before {
+            background-position: top left -70px;
+            position: absolute;
+            top: 307px;
+            left: 17px;
+        }
+
+        div:nth-child(5)::before {
+            position: absolute;
+            top: 400px;
+            left: 17px;
+        }
+
+        .modified-form {
+            text-align: left;
+        }
+
+        .modified-form p {
+            display: inline-block;
+        }
+
+        .modified-form input {
+            width: 40%;
+        }
+
+        .modified-form input.button {
+            width: 200px;
+        }
+
+        .modified-form input#name {
+            margin-left: 80px;
+        }
+
+        .modified-form input#email {
+            margin-left: 75px;
+        }
+
+        .modified-form input#tel {
+            margin-left: 44px;
+        }
+
+        .modified-form div:nth-child(2)::before {
+            top: 86px;
+            left: 165px;
+        }
+
+        .modified-form div:nth-child(3)::before {
+            top: 140px;
+            left: 165px;
+        }
+
+        .modified-form div:nth-child(4)::before {
+            top: 194px;
+            left: 165px;
+        }
+
+        .modified-form div:nth-child(5)::before {
+            top: 290px;
+            left: 45px;
+        }
+
+        .modified-form textarea {
+            width: 82%;
+            margin-left: 40px;
+        }
+
+        .modified-form .button {
+            margin-left: 200px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="form modified-form1">
+    <h2>Обратная связь</h2>
+
+    <div>
+        <p>Имя:</p>
+        <input type="text" id="name" placeholder="Введите Ваще имя" required>
+    </div>
+
+    <div>
+        <p>Email:</p>
+        <input type="email" id="email" placeholder="Введите адрес Вашей почты" required>
+    </div>
+
+    <div>
+        <p>Телефон:</p>
+        <input type="tel" id="tel" placeholder="Введите номер телефона" required>
+    </div>
+
+    <div>
+        <p>Сообщение:</p>
+        <textarea placeholder="Текст сообщения"></textarea>
+    </div>
+
+    <p>
+        <input class="button" type="submit" value="Отправить">
+    </p>
+</div>
+</body>
+</html>
